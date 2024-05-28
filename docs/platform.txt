@@ -1,0 +1,55 @@
+PLATFORM(1)                   General Commands Manual                  PLATFORM(1)
+
+NAME
+       platform - Description of available platforms for deployment
+
+SYNOPSIS
+       platform
+
+DESCRIPTION
+       This document describes the available platforms for deploying the tool.
+
+OPTIONS
+
+       AWS || -p aws
+           Amazon Web Services (AWS) is a cloud computing platform provided by
+           Amazon. AWS offers a broad set of global cloud-based products
+           including compute, storage, databases, networking, analytics, and
+           more.
+
+           Advantages:
+               - High availability and fault tolerance
+               - Wide range of services and features
+               - Pay-as-you-go pricing
+
+           Disadvantages:
+               - Complexity in cost management and resource management
+               - Dependence on a single vendor
+
+       Azure || -p azure
+           Microsoft Azure is a cloud computing platform provided by Microsoft.
+           Azure offers a wide range of cloud services including those for
+           compute, analytics, storage, and networking.
+
+           Advantages:
+               - Tight integration with Microsoft products
+               - Broad range of cloud services
+               - Strong security and compliance
+
+           Disadvantages:
+               - Steep learning curve for new technologies
+               - Potentially high costs for small businesses
+
+SEE ALSO
+       attack(1), machine(1), hash_type(1), hash(1)
+
+AUTHOR
+       Written by poisonlylo
+
+COPYRIGHT
+       This is free documentation; you can redistribute it and/or modify it
+       under the terms of the GNU General Public License as published by the
+       Free Software Foundation; either version 3 of the License, or (at your
+       option) any later version.
+
+platform                        May 2024                            platform

@@ -1,0 +1,52 @@
+ATTACK(1)                   General Commands Manual                  ATTACK(1)
+
+NAME
+       attack - Description of available attack types
+
+SYNOPSIS
+       attack
+
+DESCRIPTION
+       This document describes the available attack types for cracking hashes.
+
+OPTIONS
+
+       Dictionary attack || -a 0
+           Trying all words in a list; also called "straight" mode.
+           This is attack mode 0 (-a 0).
+
+       Combinator attack || -a 1
+           Concatenating words from multiple wordlists.
+           This is attack mode 1 (-a 1).
+
+       Brute-force attack and Mask attack || -a 3
+           Trying all characters from given charsets, per position.
+           This is attack mode 3 (-a 3).
+
+       Hybrid attack || -a 6
+           Combining wordlists+masks.
+           This is attack mode 6 (-a 6).
+
+       Hybrid attack || -a 7
+           Combining masks+wordlists.
+           This is attack mode 7 (-a 7).
+
+       Association attack || -a 9
+           Using a username, a filename, a hint, or any other pieces of
+           information which could have had an influence in the password
+           generation to attack one specific hash.
+           This is attack mode 9 (-a 9).
+
+SEE ALSO
+       platform(1), machine(1), hash_type(1), hash(1)
+
+AUTHOR
+       Written by poisonlylo
+
+COPYRIGHT
+       This is free documentation; you can redistribute it and/or modify it
+       under the terms of the GNU General Public License as published by the
+       Free Software Foundation; either version 3 of the License, or (at your
+       option) any later version.
+
+attack                          May 2024                            attack

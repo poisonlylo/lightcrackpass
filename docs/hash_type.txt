@@ -1,0 +1,197 @@
+HASH_TYPE(1)                   General Commands Manual                  HASH_TYPE(1)
+
+NAME
+       hash_type - Description of available hash types for password hashing
+
+SYNOPSIS
+       hash_type
+
+DESCRIPTION
+       This document describes the available hash types for password hashing.
+
+OPTIONS
+
+       MD4 || -t 900
+           Raw Hash
+
+       MD5 || -t 0
+           Raw Hash
+
+       SHA1 || -t 100
+           Raw Hash
+
+       SHA2-224 || -t 1300
+           Raw Hash
+
+       SHA2-256 || -t 1400
+           Raw Hash
+
+       SHA2-384 || -t 10800
+           Raw Hash
+
+       SHA2-512 || -t 1700
+           Raw Hash
+
+       SHA3-224 || -t 17300
+           Raw Hash
+
+       SHA3-256 || -t 17400
+           Raw Hash
+
+       SHA3-384 || -t 17500
+           Raw Hash
+
+       SHA3-512 || -t 17600
+           Raw Hash
+
+       RIPEMD-160 || -t 6000
+           Raw Hash
+
+       BLAKE2b-512 || -t 600
+           Raw Hash
+
+       GOST R 34.11-2012 (Streebog) 256-bit, big-endian || -t 11700
+           Raw Hash
+
+       GOST R 34.11-2012 (Streebog) 512-bit, big-endian || -t 11800
+           Raw Hash
+
+       GOST R 34.11-94 || -t 6900
+           Raw Hash
+
+       GPG (AES-128/AES-256 (SHA-1($pass))) || -t 17010
+           Raw Hash
+
+       Half MD5 || -t 5100
+           Raw Hash
+
+       Keccak-224 || -t 17700
+           Raw Hash
+
+       Keccak-256 || -t 17800
+           Raw Hash
+
+       Keccak-384 || -t 17900
+           Raw Hash
+
+       Keccak-512 || -t 18000
+           Raw Hash
+
+       Whirlpool || -t 6100
+           Raw Hash
+
+       SipHash || -t 10100
+           Raw Hash
+
+       md5(utf16le($pass)) || -t 70
+           Raw Hash
+
+       sha1(utf16le($pass)) || -t 170
+           Raw Hash
+
+       sha256(utf16le($pass)) || -t 1470
+           Raw Hash
+
+       sha384(utf16le($pass)) || -t 10870
+           Raw Hash
+
+       sha512(utf16le($pass)) || -t 1770
+           Raw Hash
+
+       BLAKE2b-512($pass.$salt) || -t 610
+           Raw Hash salted and/or iterated
+
+       BLAKE2b-512($salt.$pass) || -t 620
+           Raw Hash salted and/or iterated
+
+       md5($pass.$salt) || -t 10
+           Raw Hash salted and/or iterated
+
+       md5($salt.$pass) || -t 20
+           Raw Hash salted and/or iterated
+
+       md5($salt.$pass.$salt) || -t 3800
+           Raw Hash salted and/or iterated
+
+       md5($salt.md5($pass)) || -t 3710
+           Raw Hash salted and/or iterated
+
+       md5($salt.md5($pass.$salt)) || -t 4110
+           Raw Hash salted and/or iterated
+
+       md5($salt.md5($salt.$pass)) || -t 4010
+           Raw Hash salted and/or iterated
+
+       md5($salt.sha1($salt.$pass)) || -t 21300
+           Raw Hash salted and/or iterated
+
+       md5($salt.utf16le($pass)) || -t 40
+           Raw Hash salted and/or iterated
+
+       md5(md5($pass)) || -t 2600
+           Raw Hash salted and/or iterated
+
+       md5(md5($pass).md5($salt)) || -t 3910
+           Raw Hash salted and/or iterated
+
+       md5(md5(md5($pass))) || -t 3500
+           Raw Hash salted and/or iterated
+
+       md5(sha1($pass)) || -t 4400
+           Raw Hash salted and/or iterated
+
+       md5(sha1($pass).$salt) || -t 4410
+           Raw Hash salted and/or iterated
+
+       md5(sha1($pass).md5($pass).sha1($pass)) || -t 20900
+           Raw Hash salted and/or iterated
+
+       md5(sha1($salt).md5($pass)) || -t 21200
+           Raw Hash salted and/or iterated
+
+       md5(strtoupper(md5($pass))) || -t 4300
+           Raw Hash salted and/or iterated
+
+       md5(utf16le($pass).$salt) || -t 30
+           Raw Hash salted and/or iterated
+
+       sha1($pass.$salt) || -t 110
+           Raw Hash salted and/or iterated
+
+       sha1($salt.$pass) || -t 120
+           Raw Hash salted and/or iterated
+
+       sha1($salt.$pass.$salt) || -t 4900
+           Raw Hash salted and/or iterated
+
+       sha1($salt.sha1($pass)) || -t 4520
+           Raw Hash salted and/or iterated
+
+       sha1($salt.sha1($pass.$salt)) || -t 24300
+           Raw Hash salted and/or iterated
+
+       sha1($salt.utf16le($pass)) || -t 140
+           Raw Hash salted and/or iterated
+
+       sha1($salt1.$pass.$salt2) || -t 19300
+           Raw Hash salted and/or iterated
+
+       sha1(CX) || -t 14400
+           Raw Hash salted and/or iterated
+
+       sha1(md5($pass)) || -t 4700
+           Raw Hash salted
+
+SEE ALSO
+       attack(1), machine(1), platform(1), hash(1)
+
+AUTHOR
+       Written by poisonlylo
+
+COPYRIGHT
+       This is free documentation; you can redistribute it and/or modify it
+       under the terms of the GNU General Public License as published by the
+       Free Software Foundation; either version 3 of the License, or (at your
+       option) any later version.
+
+hash_type                        May 2024                            hash_type
