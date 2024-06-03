@@ -98,6 +98,33 @@ case $attack_argument in
         ;;
 esac
 
+Bien sûr, voici le cas que vous avez demandé :
+
+bash
+
+# Map machine types to arguments
+case $selected_machine in
+    0)
+        selected_machine="-m 1" # Standard NC6s v3
+        ;;
+    1)
+        selected_machine="-m 2" # Standard ND6s v2
+        ;;
+    2)
+        selected_machine="-m 3" # Standard NV32as v4
+        ;;
+    3)
+        selected_machine="-m 4" # Standard NC12s v3
+        ;;
+    4)
+        selected_machine="-m 5" # Standard NC24s v3
+        ;;
+    *)
+        echo "Invalid machine selected. Please choose a number between 1 and 5."
+        ;;
+esac
+
+
 # Map hash types to arguments
 case $hash_argument in
     0)

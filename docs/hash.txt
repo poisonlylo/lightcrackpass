@@ -1,0 +1,72 @@
+NAME
+    GPU Instances - Information on different GPU instances
+
+DESCRIPTION
+    This document provides information on the available GPU instances, including hardware specifications, costs, and arguments for choosing a machine.
+
+SYNOPSIS
+    Details of GPU instances:
+
+        Standard NC6s v3 | -m 1
+            GPU : NVIDIA Tesla V100
+            vCPU : 6
+            RAM : 112 GB
+            On-demand price: Approximately 3.06 USD per hour
+            Estimated time to crack a password: 0.001 second
+
+        Standard ND6s v2 | -m 2
+            GPU : NVIDIA Tesla V100
+            vCPU : 6
+            RAM : 112 GB
+            On-demand price: Approximately 5.76 USD per hour
+            Estimated time to crack a password: 0.001 second
+
+        Standard NV32as v4 | -m 3
+            GPU : 4 x AMD Radeon Instinct MI25
+            vCPU : 32
+            RAM : 448 GB
+            On-demand price: Approximately 7.36 USD per hour
+            Estimated time to crack a password: 0.0005 second (4 GPUs)
+
+        Standard NC12s v3 | -m 4
+            GPU : 2 x NVIDIA Tesla V100
+            vCPU : 12
+            RAM : 224 GB
+            On-demand price: Approximately 6.12 USD per hour
+            Estimated time to crack a password: 0.0005 second (2 GPUs)
+
+        Standard NC24s v3 | -m 5
+            GPU : 4 x NVIDIA Tesla V100
+            vCPU : 24
+            RAM : 448 GB
+            On-demand price: Approximately 12.24 USD per hour
+            Estimated time to crack a password: 0.00025 second (4 GPUs)
+
+EXAMPLES
+    Examples of using GPU instances for compute-intensive tasks like password cracking:
+
+    To crack a password using a Standard NC6s v3 instance:
+        Command: -m 1
+        Estimated time: 0.001 second
+
+    To crack a password using a Standard ND6s v2 instance:
+        Command: -m 2
+        Estimated time: 0.001 second
+
+    To crack a password using a Standard NV32as v4 instance:
+        Command: -m 3
+        Estimated time: 0.0005 second (with 4 GPUs)
+
+    To crack a password using a Standard NC12s v3 instance:
+        Command: -m 4
+        Estimated time: 0.0005 second (with 2 GPUs)
+
+    To crack a password using a Standard NC24s v3 instance:
+        Command: -m 5
+        Estimated time: 0.00025 second (with 4 GPUs)
+
+AUTHOR
+    Document written by poisonlylo.
+
+SEE ALSO
+    For more information, consult the official documentation of cloud providers.
