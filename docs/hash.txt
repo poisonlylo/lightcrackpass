@@ -5,42 +5,77 @@ DESCRIPTION
     This document provides information on the available GPU instances, including hardware specifications, costs, and arguments for choosing a machine.
 
 SYNOPSIS
-    Details of GPU instances:
+    Details of GPU instances :
 
-        Standard NC6s v3 | -m 1
-            GPU : NVIDIA Tesla V100
-            vCPU : 6
-            RAM : 112 GB
-            On-demand price: Approximately 3.06 USD per hour
-            Estimated time to crack a password: 0.001 second
+        AZURE :
 
-        Standard ND6s v2 | -m 2
-            GPU : NVIDIA Tesla V100
-            vCPU : 6
-            RAM : 112 GB
-            On-demand price: Approximately 5.76 USD per hour
-            Estimated time to crack a password: 0.001 second
+            Standard NC6s v3 | -m 1
+                GPU : NVIDIA Tesla V100
+                vCPU : 6
+                RAM : 112 GB
+                On-demand price: Approximately 3.06 USD per hour
+                Estimated time to crack a password: 0.001 second
 
-        Standard NV32as v4 | -m 3
-            GPU : 4 x AMD Radeon Instinct MI25
-            vCPU : 32
-            RAM : 448 GB
-            On-demand price: Approximately 7.36 USD per hour
-            Estimated time to crack a password: 0.0005 second (4 GPUs)
+            Standard ND6s v2 | -m 2
+                GPU : NVIDIA Tesla V100
+                vCPU : 6
+                RAM : 112 GB
+                On-demand price: Approximately 5.76 USD per hour
+                Estimated time to crack a password: 0.001 second
 
-        Standard NC12s v3 | -m 4
-            GPU : 2 x NVIDIA Tesla V100
-            vCPU : 12
-            RAM : 224 GB
-            On-demand price: Approximately 6.12 USD per hour
-            Estimated time to crack a password: 0.0005 second (2 GPUs)
+            Standard NV32as v4 | -m 3
+                GPU : 4 x AMD Radeon Instinct MI25
+                vCPU : 32
+                RAM : 448 GB
+                On-demand price: Approximately 7.36 USD per hour
+                Estimated time to crack a password: 0.0005 second (4 GPUs)
 
-        Standard NC24s v3 | -m 5
-            GPU : 4 x NVIDIA Tesla V100
-            vCPU : 24
-            RAM : 448 GB
-            On-demand price: Approximately 12.24 USD per hour
-            Estimated time to crack a password: 0.00025 second (4 GPUs)
+            Standard NC12s v3 | -m 4
+                GPU : 2 x NVIDIA Tesla V100
+                vCPU : 12
+                RAM : 224 GB
+                On-demand price: Approximately 6.12 USD per hour
+                Estimated time to crack a password: 0.0005 second (2 GPUs)
+
+            Standard NC24s v3 | -m 5
+                GPU : 4 x NVIDIA Tesla V100
+                vCPU : 24
+                RAM : 448 GB
+                On-demand price: Approximately 12.24 USD per hour
+                Estimated time to crack a password: 0.00025 second (4 GPUs)
+        
+        AWS : 
+
+             t2.2xlarge:
+                vCPUs: 8
+                Memory: 32 GiB
+                Processor: Intel Xeon
+                Pricing Model: CPU Credit-based
+
+            t3.2xlarge:
+                vCPUs: 8
+                Memory: 32 GiB
+                Processor: AMD EPYC
+                Pricing Model: CPU Credit-based
+
+            t3.4xlarge:
+                vCPUs: 16
+                Memory: 64 GiB
+                Processor: AMD EPYC
+                Pricing Model: CPU Credit-based
+            
+            c5.2xlarge:
+                vCPUs: 8
+                Memory: 16 GiB
+                Processor: Intel Xeon Platinum 8000
+                Pricing Model: Performance-based
+
+            c5a.8xlarge:
+                vCPUs: 32
+                Memory: 64 GiB
+                Processor: AMD EPYC
+                Pricing Model: Performance-based
+
 
 EXAMPLES
     Examples of using GPU instances for compute-intensive tasks like password cracking:
